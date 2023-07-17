@@ -1,0 +1,6 @@
+-- 코드를 입력하세요
+SELECT BOOK_ID, DATE_FORMAT(PUBLISHED_DATE,"%Y-%m-%d") AS PUBLISHED_DATE
+    FROM BOOK
+    WHERE PUBLISHED_DATE LIKE "2021%"  -- 2021년에 출판된
+    AND CATEGORY = "인문"  -- '인문' 카테고리에 속하는
+    ORDER BY PUBLISHED_DATE;  -- 출판일 기준 정렬
